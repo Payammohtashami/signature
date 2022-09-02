@@ -1,0 +1,39 @@
+
+.button_wrapper
+    position: relative
+    flex-direction: column
+    display: flex
+
+.button
+    transition: all .2s
+    height: 40px
+    padding: 0 16px
+    font-size: 14px
+    font-weight: 600
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    img
+        width: 20px
+        margin-right: 10px
+    svg
+        margin-left: 12px
+        width: 7px
+
+.popup
+    position: absolute
+    right: 0
+    top: 100%
+    display: flex
+    flex-direction: column
+    display: none
+    transition: all ease-in 300ms
+    white-space: nowrap
+
+    &.disable
+
+    &:not(.disable):hover
+        .main-items
+            display: flex
+    &.show
+        display: flex
